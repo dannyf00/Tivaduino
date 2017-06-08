@@ -12,16 +12,11 @@ Software environment:
 The following functions / APIs are implemented:
 
 Constants:
-  GPIO pin: PA0..PA7, PB0..PB7, PC0..PC7, PD0..PD7, PE0..PE7, PF0..PF7, PG0..PG7, PH0..PH7, as implemented on the chip
-  
+  GPIO pin: PA0..PA7, PB0..PB7, PC0..PC7, PD0..PD7, PE0..PE7, PF0..PF7, PG0..PG7, PH0..PH7, as implemented on the chip 
   PWM pin:
-  
   Analog input pin: A0..A11, ATEMP (temperature sensor)
-  
   pin level: HIGH/LOW
-  
   mode: INPUT, OUTPUT, INPUT_PULLUP
-  
   analog reference: DEFAULT, INTERNAL for internal 3v bandgap, EXTERNAL for external 3v.
   
 GPIO:
@@ -94,6 +89,7 @@ Interrupts:
   noInterrupts(): implemented
 
 Serial communications: on all 12 UARTs (numbered 0..11 inclusive)
+
 ***serial communications are interrupt driven, non-blocking. As such, you have to test for UARTn availability before transmitting on that UART***
   
   serialnBegin(): initialize UARTn
